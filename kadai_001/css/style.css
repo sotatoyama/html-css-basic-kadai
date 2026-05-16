@@ -1,0 +1,101 @@
+
+body{
+  font-family: "Noto Sans Japanese","Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif ;
+  font-size: 15px;
+  box-sizing: border-box;
+  max-width: 1080px;
+  margin: 0;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.logo{
+  font-size: 34px;
+  border: 2px solid black;
+  padding: 10px 20px;
+}
+
+.nav-pc ul{
+  display: flex;
+  font-size: 34px;
+  padding: 0;
+}
+.nav-pc li{
+  list-style: none; 
+}
+.nav-pc a{
+  text-decoration: none; 
+  margin-left: 20px;
+}
+.nav-pc a:hover{
+  text-decoration: underline;
+}
+.top-images{
+  position: relative;
+  height: 400px;
+  padding: 40px 0;
+  margin: auto;
+}
+.top-images > img{
+  max-width: 100%;
+  display: block;
+}
+.about-flex{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.index-h2{
+  text-align: center;
+  font-size: 34px;
+}
+.index-h3{
+  font-size: 24px;
+}
+.my-picture{
+  width: 40%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.my-picture > img{
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.my-introduction{
+  width: 60%;
+}
+.works-box{
+  display: flex;
+  width: 80%;
+
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.works-item{
+  width: 30%;
+}
+.works-item > img{
+  width: 100%;
+}
+footer{
+  text-align: center;
+}
+
+@media screen and (max-width:768px) {
+  .about-flex{
+    flex-direction:column;
+    align-items: center;
+  }
+  .works-box{
+    flex-direction: column;
+    align-items: center;
+  }
+  .my-picture , .my-introduction , .works-item{
+    width: 100%;
+  }
+}
