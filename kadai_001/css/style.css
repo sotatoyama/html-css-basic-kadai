@@ -1,101 +1,127 @@
-
-body{
-  font-family: "Noto Sans Japanese","Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif ;
-  font-size: 15px;
+* {
   box-sizing: border-box;
-  max-width: 1080px;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+}
+p {
   margin: 0;
 }
-header{
+.header-inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 80%;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
 }
 
-.logo{
+.header-inner a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+h1 {
+  margin: 0 0 0 20px;
   font-size: 34px;
-  border: 2px solid black;
-  padding: 10px 20px;
+  border: 1px solid black;
+  padding: 0px 20px;
+}
+.home {
+  text-decoration: none;
+}
+nav .menu {
+  display: flex;
+  padding-left: 0;
 }
 
-.nav-pc ul{
-  display: flex;
+nav li {
+  margin: 0 20px;
+  list-style: none;
+}
+
+nav a {
   font-size: 34px;
-  padding: 0;
 }
-.nav-pc li{
-  list-style: none; 
-}
-.nav-pc a{
-  text-decoration: none; 
-  margin-left: 20px;
-}
-.nav-pc a:hover{
-  text-decoration: underline;
-}
-.top-images{
-  position: relative;
-  height: 400px;
-  padding: 40px 0;
-  margin: auto;
-}
-.top-images > img{
-  max-width: 100%;
-  display: block;
-}
-.about-flex{
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-}
-.index-h2{
+
+h2 {
+  margin: 0;
+  padding: 60px 0 40px;
   text-align: center;
   font-size: 34px;
 }
-.index-h3{
+
+p,
+li {
+  font-size: 18px;
+}
+img {
+  margin: 0 auto;
+  width: 100%;
+}
+.about-inner {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
+}
+.name {
   font-size: 24px;
+  font-weight: bold;
 }
-.my-picture{
-  width: 40%;
+.circle {
   border-radius: 50%;
-  overflow: hidden;
+  width: 280px;
+  height: 280px;
 }
-.my-picture > img{
-  width: 100%;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.my-introduction{
-  width: 60%;
-}
-.works-box{
-  display: flex;
-  width: 80%;
-
+.content {
   margin: 0 auto;
-  justify-content: space-between;
+  padding: 0 20px;
 }
-.works-item{
-  width: 30%;
+.works-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 960px;
 }
-.works-item > img{
-  width: 100%;
-}
-footer{
-  text-align: center;
+.item {
+  margin: 0 10px;
+  padding-bottom: 60px;
+  width: 25%;
 }
 
-@media screen and (max-width:768px) {
-  .about-flex{
-    flex-direction:column;
-    align-items: center;
+footer p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 28px;
   }
-  .works-box{
-    flex-direction: column;
-    align-items: center;
+  
+  h2 {
+    padding: 30px 0 20px;
+    font-size: 28px;
   }
-  .my-picture , .my-introduction , .works-item{
+
+  nav li {
+    margin: 0 10px;
+  }
+
+  nav a {
+    font-size: 21px;
+  }
+
+  .item {
     width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
   }
 }
